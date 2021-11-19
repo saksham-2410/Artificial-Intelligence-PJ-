@@ -13,7 +13,7 @@ class Network:
     def __init__(self, hidden_layer_size, learning_rate, checkpoints_dir):
         self.learning_rate = learning_rate
         # set TensorFlow Session
-        self.sess = tf.InteractiveSession()
+        self.sess = tf.compat.v1.InteractiveSession()
         # set observations
         self.observations = tf.placeholder(tf.float32, [None, OBSERVATIONS_SIZE])
         # set actions: +1 for up, -1 for down
