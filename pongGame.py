@@ -3,7 +3,7 @@ import argparse
 import pickle
 import numpy as np
 import gym
-from policy_network import Network
+from policyGradientNetwork import Network
 parser = argparse.ArgumentParser()
 parser.add_argument('--hidden_layer_size', type=int, default=200)
 parser.add_argument('--learning_rate', type=float, default=0.0005)
